@@ -1,0 +1,275 @@
+@import url("https://cdn.web-fonts.ge/fonts/dejavu-sans/css/dejavu-sans.min.css");
+
+body{
+    font-family: "DejaVu Sans", sans-serif;
+    position: relative;
+}
+header{
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+
+.baner_content{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(247 247 247);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+figcaption{
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 2;
+}
+aside h3{
+    font-size: 1.8rem;
+    text-align: center;
+}
+aside h5{
+    font-size: 1.5rem;
+    color: red;
+}
+aside h5:after {
+    content: ' \2192';
+}
+aside h5:hover{
+    color: #da5059;
+}
+.title{
+    color: #da5059;
+}
+.header_main_content{
+    width: 60%;
+    margin: 0 auto;
+}
+header h1{
+    color: #24292d;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin:  auto 2rem;
+    padding: 2rem 0;
+}
+header h2,header h3{
+    color: #5b6770;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+.video_content {
+    margin: 5rem 0;
+}
+video{
+    width: 100%;
+    height:auto;
+}
+
+/*chooser section*/
+main{
+    margin: 7rem 0 0 0 ;
+}
+main section{
+    margin: 0 auto;
+}
+.each_person_video video::-webkit-media-controls {
+    display: none;
+}
+.instruction_container{
+    font-size: 1rem;
+    color: #5b6770;
+    font-style: italic;
+    padding-bottom: 4rem;
+}
+.chooser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+}
+.persons_common_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.person_video{
+    width: 23%;
+    padding: 1%;
+    cursor: pointer;
+}
+.each_person_video{
+    width: 100%;
+}
+.chooser video{
+    width: 100%;
+    height: auto;
+}
+.name{
+    border-bottom: 1px solid #e37c83;
+    color: #373e43;
+    font-size: 1.1rem;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.chooser-instructions p {
+    color: #da5059;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-align: center;
+    opacity: 0;
+}
+.down-arrow {
+    display: block;
+    margin: 0 auto;
+    stroke: #da5059;
+    opacity: 0;
+    transform: translateY(-5px);
+}
+.person_video:hover
+.chooser-instructions p,
+.person_video:hover
+.down-arrow
+{
+    opacity: 1;
+}
+.person_video:hover
+.chooser-instructions p{
+    transition-delay: 0.2s;
+    transition: 2s;
+}
+.person_video:hover
+.down-arrow{
+    transform: translateY(5px);
+    transition: 2s;
+    transition-delay: 0.5s;
+}
+.person_info,.header_main_content{
+    /* width: 55%; */
+    max-width: 700px;
+}
+video:focus{
+    outline: none;
+}
+.person_header {
+    margin: 0 auto 3rem;
+    padding: 0 1.5rem;
+    text-align: center;
+}
+.person_header h2{
+    color: #da5059;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    margin: 3rem 0 1rem 0;
+}
+.person_header h2:before,
+.person_header h2:after {
+    color: #eda7ac;
+    content: '" ';
+}
+.person_header h3{
+    color: #5b6770;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.person_text{
+    color: #373e43;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.35;
+    margin: 2rem 0 1rem 0;
+    padding: 0 4%;
+}
+.person_details{
+    padding: 0.2rem 0;
+}
+
+
+footer {
+    margin: 2% 0;
+}
+.authors-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.authors-container:before {
+    border-top: 2px solid #e77454;
+    content: "";
+    display: block;
+    margin: 1rem auto;
+    min-width: 250px;
+}
+.authors-container h2 {
+    font-size: 1.3rem;
+}
+.authors-container p {
+    font-size: 1rem;
+}
+/*responsive*/
+@media only screen and (max-width: 768px) {
+    .chooser{
+        width: 100%;
+    }
+    .person_video{
+        width: 40%;
+        padding: 5%;
+    }
+    main{
+        margin: 4rem 0 0 0;
+    }
+    .person_header h2,.title{
+        font-size: 1.5rem;
+    }
+    .person_header h3{
+        font-size: 1.3rem;
+    }
+}
+@media only screen and (max-width: 680px) {
+    
+    .baner_content{
+        flex-direction: column;
+        height: 80px;
+    }
+    .baner_content h5{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .video_content{
+        margin: 2rem 0;
+    }
+    .person_header h2{
+        font-size: 1.3rem;
+    }
+    .person_header h3,.person_text,.subtitle,.header_main_content h3{
+        font-size: 1rem;
+    }
+    .header_main_content{
+        width: 90%;
+    }
+} 
